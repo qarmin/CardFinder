@@ -5,7 +5,7 @@ import java.awt.event.MouseListener;
 
 public class Block extends JButton implements MouseListener {
 
-	public static String imageResolution = "64";
+	public static String imageResolution = "128";
 
 	public static boolean buttonsDisabled = false;
 
@@ -80,7 +80,7 @@ public class Block extends JButton implements MouseListener {
 						Pair.x2 = fx;
 						Pair.y2 = fy;
 						Threader tt = new Threader();
-						tt.timeToCount = 1.0f;
+						tt.timeToCount = 0.5f;
 						tt.currentTask = Threader.CLEAR_PAIR;
 						tt.start();
 						return;

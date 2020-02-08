@@ -9,9 +9,7 @@ public class Threader extends Thread {
 	public int currentTask = -1;
 	
 	public float timeToCount = 0f;
-	
-	public Pair para;
-	
+		
 	public void run() {
 		if(currentTask == DISABLE_BUTTONS) {
 			Block.setButtonDisabled(true);
@@ -53,14 +51,6 @@ public class Threader extends Thread {
 					break;
 				}
 			}
-			
-			
 		}
 	}
-	
-	
-	
-	
-	
-	
 }
